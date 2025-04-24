@@ -1,0 +1,116 @@
+/* Default light theme */
+:root {
+    --bg-color: #f5f5f5;
+    --text-color: #333;
+    --button-bg: #007bff;
+    --button-hover-bg: #0056b3;
+    --input-border: #ccc;
+    --input-focus-border: #007bff;
+    --result-bg: #fff;
+    --result-shadow: rgba(0,0,0,0.1);
+  }
+  
+  /* Dark theme variables */
+  [data-theme="dark"] {
+    --bg-color: #333;
+    --text-color: #f5f5f5;
+    --button-bg: #444;
+    --button-hover-bg: #222;
+    --input-border: #777;
+    --input-focus-border: #44c;
+    --result-bg: #444;
+    --result-shadow: rgba(0,0,0,0.3);
+  }
+  
+  * {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  
+  .container {
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+  }
+  
+  input {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid var(--input-border);
+    border-radius: 8px;
+    width: 250px;
+    margin-right: 10px;
+    outline: none;
+    transition: 0.2s ease;
+  }
+  
+  input:focus {
+    border-color: var(--input-focus-border);
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: var(--button-bg);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: var(--button-hover-bg);
+  }
+  
+  #result {
+    margin-top: 30px;
+    background-color: var(--result-bg);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px var(--result-shadow);
+    color: var(--text-color);
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  p {
+    margin: 10px 0;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  #toggleMode {
+    margin-top: 20px;
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  #toggleMode:hover {
+    background-color: #ccc;
+  }
+  
